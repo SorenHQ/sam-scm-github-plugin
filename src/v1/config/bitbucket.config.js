@@ -1,0 +1,20 @@
+export default {
+  name: "bitbucket",
+  title: "Bitbucket",
+  apiBaseUrl: "https://api.bitbucket.org/2.0",
+  apiVersion: "2.0",
+  features: [
+    "list-repos",
+    "get-repo",
+    "list-repo-contents",
+    "get-repo-file-content",
+    "list-branches",
+    "list-branch-commits",
+    "list-commit-modifications",
+    "get-commit-details",
+    "commits-diff",
+    "comment-prs",
+    "list-pipelines",
+    "list-deployments",
+  ],
+};

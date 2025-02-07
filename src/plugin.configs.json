@@ -1,0 +1,60 @@
+{
+  "name": "SCM Github Provider",
+  "author": "sam-soofy",
+  "version": "v1.0.0",
+  "proto": "v0.0.1",
+  "schema_version": "srn-schema-v1",
+  "init_config": [
+    {
+      "name": "github_config",
+      "title": "Github Settings",
+      "description": "Required settings to connect to the Github API",
+      "params": [
+        {
+          "attr": {
+            "regex_pattern": {
+              "pattern": "^[a-zA-Z0-9-]+$",
+              "message": "Invalid Github username"
+            },
+            "input_type": "string",
+            "secret": false,
+            "required": true
+          },
+          "options": [
+            {
+              "value": "",
+              "title": ""
+            }
+          ],
+          "key": "owner",
+          "placeholder": "e.g. john-doe",
+          "value": [],
+          "title": "Enter Github Username",
+          "description": "The username (account) of the owner of the repository in Github"
+        },
+        {
+          "attr": {
+            "regex_pattern": {
+              "pattern": "^[A-Za-z0-9_\\-]+$",
+              "message": "Invalid token format"
+            },
+            "input_type": "string",
+            "secret": true,
+            "required": true
+          },
+          "options": [
+            {
+              "value": "",
+              "title": ""
+            }
+          ],
+          "key": "token",
+          "placeholder": "e.g. tok_*******",
+          "value": [],
+          "title": "Enter Github Token",
+          "description": "Generate a new token from https://github.com > Settings > Developer settings > Personal access tokens and paste it here"
+        }
+      ]
+    }
+  ]
+}

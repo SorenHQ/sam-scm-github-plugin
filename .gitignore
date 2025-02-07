@@ -1,3 +1,6 @@
+# Custom storage and files
+/storage
+
 # Logs
 logs
 *.log
