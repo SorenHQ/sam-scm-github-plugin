@@ -22,7 +22,7 @@ RUN addgroup --system appgroup && \
 USER appuser
 
 # Expose port
-EXPOSE 8000
+EXPOSE 80
 
 # Start the application
 CMD ["npm", "start"] 
